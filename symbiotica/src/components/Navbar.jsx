@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom'
+
 function Navbar() {
   return (
     <nav className="w-full px-12 py-6 flex justify-between items-center">
-      <div className="text-teal-400 font-semibold tracking-widest">
+      <Link to="/" className="text-teal-400 font-semibold tracking-widest hover:text-white transition-colors">
         SYMBIOTICA
-      </div>
+      </Link>
       <ul className="flex gap-8 text-sm text-teal-300">
-        <li className="hover:text-white cursor-pointer">Home</li>
+        <li><Link to="/" className="hover:text-white cursor-pointer transition-colors">Home</Link></li>
         <li className="hover:text-white cursor-pointer">About Us</li>
         <li className="hover:text-white cursor-pointer">Our Services</li>
-        <li className="hover:text-white cursor-pointer">Login</li>
+        <li><Link to="/dashboard" className="hover:text-white cursor-pointer transition-colors">Dashboard</Link></li>
       </ul>
     </nav>
   )
