@@ -6,6 +6,7 @@ import Dataset from '../pages/Dataset'
 import RentOut from '../pages/RentOut'
 import History from '../pages/History'
 import Train from '../pages/Train'
+import AuthPage from '../pages/AuthPage'
 
 const router = createBrowserRouter([
   {
@@ -32,9 +33,13 @@ const router = createBrowserRouter([
     path: '/history',
     element: <History />,
   }, 
-   {
-    path: '/train',
-    element: <Train />,
+    {
+      path: '/train',
+      element: <Train />,
+    },
+  {
+    path: "/login",
+    element: <AuthPage />,
   },
 ])
 

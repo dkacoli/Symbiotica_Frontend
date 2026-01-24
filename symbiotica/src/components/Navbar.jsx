@@ -11,6 +11,8 @@ function Navbar() {
         <li className="hover:text-white cursor-pointer">About Us</li>
         <li className="hover:text-white cursor-pointer">Our Services</li>
         <li><Link to="/dashboard" className="hover:text-white cursor-pointer transition-colors">Dashboard</Link></li>
+        <li><Link to="/login" className="hover:text-white cursor-pointer transition-colors">Login</Link></li>
+      
       </ul>
     </nav>
   )
